@@ -1,32 +1,24 @@
 <template>
 
-        <v-layout
-                text-xs-center
-                wrap
-        >
-<!--            <v-flex xs12>-->
-<!--            <v-img-->
-<!--                    :src="require('../assets/logo.svg')"-->
-<!--                    class="my-3"-->
-<!--                    contain-->
-<!--                    height="200"-->
-<!--            ></v-img>-->
-<!--        </v-flex>-->
-
-            <v-flex>
-                <main-carousel />
-            </v-flex>
-        </v-layout>
+    <v-layout
+            text-xs-center
+            wrap
+    >
+        <v-flex>
+            <main-carousel/>
+            <products/>
+        </v-flex>
+    </v-layout>
 
 </template>
 
 <script>
     import MainCarousel from "./mainCarousel";
-    export default {
-        components: {MainCarousel},
-        data: () => ({
+    import Products from "./products";
 
-        })
+    export default {
+        components: {Products, MainCarousel},
+        data: () => ({})
     }
 </script>
 
