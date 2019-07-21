@@ -1,10 +1,24 @@
 <template>
-    <v-carousel hide-delimiters height="300">
-        <v-carousel-item
-                v-for="(item,i) in items"
-                :key="i"
-                :src="item.src"
-        ></v-carousel-item>
+    <v-carousel hide-delimiters height="450">
+        <v-carousel-item>
+            <v-img src="https://cdn.vuetifyjs.com/images/carousel/squirrel.jpg">
+                <h1>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                </h1>
+            </v-img>
+
+
+
+
+        </v-carousel-item>
+
+<!--        <v-carousel-item>-->
+<!--            <v-img src="https://cdn.vuetifyjs.com/images/carousel/sky.jpg"/>-->
+<!--        </v-carousel-item>-->
+
+<!--        <v-carousel-item>-->
+<!--            <v-img src="https://cdn.vuetifyjs.com/images/carousel/bird.jpg"/>-->
+<!--        </v-carousel-item>-->
     </v-carousel>
 </template>
 
