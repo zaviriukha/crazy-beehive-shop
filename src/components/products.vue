@@ -19,20 +19,29 @@
                         </v-card-title>
 
                         <v-card-text class="justify-space-between d-flex">
-                            <div class="text-xs-left" style="flex-basis: 70%!important;">gfnmf gjkfgjkfgiio gjgjndfbf bvnfjkgjgfo gngjgnbjbfj fdjkdfjgf</div>
-                            <div class="price" style="flex-basis: 30%!important;">
+                            <div class="text-xs-left" style="flex-basis: 70%!important;">gfnmf gjkfgjkfgiio gjgjndfbf
+                                bvnfjkgjgfo gngjgnbjbfj fdjkdfjgf
+                            </div>
+                            <div class="price headline" style="flex-basis: 30%!important;">
                                 50 грн
                             </div>
                         </v-card-text>
 
                         <v-card-actions>
-                            <v-btn flat color="orange">Share</v-btn>
-                            <v-btn flat color="orange">Explore</v-btn>
+                            <v-btn color="orange">Add to card</v-btn>
+                            <v-btn flat icon color="pink">
+                                <v-icon>favorite</v-icon>
+                            </v-btn>
+                            <v-select
+                                    :items="items"
+                                    placeholder="1"
+                                    height="25"
+                                    solo
+                            ></v-select>
                         </v-card-actions>
                     </v-card>
                 </v-flex>
             </v-layout>
-
 
 
         </div>
@@ -43,10 +52,19 @@
 
 <script>
     export default {
-        name: "products"
+        name: "products",
+        data: () => ({
+            items: ['1', '2', '3', '4'],
+        }),
     }
 </script>
 
-<style scoped>
+<style lang="scss">
+    .v-text-field__details {
+        display: none;
+    }
 
+    .v-input__slot {
+        margin-bottom: 0;
+    }
 </style>

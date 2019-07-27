@@ -5,8 +5,9 @@
             wrap
     >
         <v-flex>
-            <main-carousel/>
-            <products/>
+            <main-carousel class="mb-5"/>
+<!--            <products/>-->
+            <sections-slider/>
         </v-flex>
     </v-layout>
 
@@ -15,9 +16,10 @@
 <script>
     import MainCarousel from "./mainCarousel";
     import Products from "./products";
+    import SectionsSlider from "./functionalСomponents/sectionsSlider";
 
     export default {
-        components: {Products, MainCarousel},
+        components: {SectionsSlider, Products, MainCarousel},
         data: () => ({})
     }
 </script>
