@@ -1,34 +1,43 @@
 <template>
-    <carousel-3d :inverse-scaling="500" :perspective="0" :space="400" :display="3" :height="240">
-        <slide :index="0">
-            <img src="../../assets/images/tomato-sauce-min.jpg"/>
+    <div>
+        <v-row align="center"
+               justify="center"
+        >
+            <h1 class="display-1 text-uppercase" >Products</h1>
+        </v-row>
 
-            <div class="section-title">
-                <hr/>
-                <span class="text-uppercase display-2 white--text">Sauce</span>
-                <hr/>
-            </div>
+        <carousel3d :inverse-scaling="500" :perspective="0" :space="400" :display="3" :height="240">
+            <slide :index="0">
+                <img src="../../assets/images/tomato-sauce-min.jpg"/>
 
-        </slide>
-        <slide :index="1">
-            <img src="../../assets/images/cookies.jpg"/>
+                <div class="section-title">
+                    <hr/>
+                    <span class="text-uppercase display-2 white--text">Sauce</span>
+                    <hr/>
+                </div>
 
-            <div class="section-title">
-                <hr/>
-                <span class="text-uppercase display-2 white--text">Sweets</span>
-                <hr/>
-            </div>
-        </slide>
-        <slide :index="2">
-            <img src="../../assets/images/smoothie-bow.jpg"/>
+            </slide>
+            <slide :index="1">
+                <img src="../../assets/images/cookies.jpg"/>
 
-            <div class="section-title">
-                <hr/>
-                <span class="text-uppercase display-2 white--text">healthy food</span>
-                <hr/>
-            </div>
-        </slide>
-    </carousel-3d>
+                <div class="section-title">
+                    <hr/>
+                    <span class="text-uppercase display-2 white--text">Sweets</span>
+                    <hr/>
+                </div>
+            </slide>
+            <slide :index="2">
+                <img src="../../assets/images/smoothie-bow.jpg"/>
+
+                <div class="section-title">
+                    <hr/>
+                    <span class="text-uppercase display-2 white--text">healthy food</span>
+                    <hr/>
+                </div>
+            </slide>
+        </carousel3d>
+    </div>
+
 
 </template>
 

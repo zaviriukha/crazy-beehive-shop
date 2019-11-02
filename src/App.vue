@@ -2,7 +2,7 @@
     <v-app>
         <v-toolbar>
 
-            <v-text-field placeholder='Search' append-icon='search' style='max-width: 200px'></v-text-field>
+            <v-text-field hide-details placeholder='Search' append-icon='search' style='max-width: 200px'></v-text-field>
 
             <v-spacer></v-spacer>
 
@@ -33,9 +33,9 @@
                     </v-btn>
                 </template>
                 <v-list dense>
-                    <v-list-tile v-for="(c, index) in currencies" :key="index" @click="currency = c">
-                        <v-list-tile-title>{{ c }}</v-list-tile-title>
-                    </v-list-tile>
+                    <v-list-item v-for="(c, index) in currencies" :key="index" @click="currency = c">
+                        <v-list-item-title>{{ c }}</v-list-item-title>
+                    </v-list-item>
                 </v-list>
             </v-menu>
 
@@ -50,12 +50,13 @@
 </template>
 
 <script>
-    import HelloWorld from './components/HelloWorld'
+    import HelloWorld from './components/HelloWorld';
     import MainNav from "./components/mainNav";
-
+    import router from './router.js'
 
     export default {
         name: 'App',
+        router: router,
         components: {
             MainNav,
             HelloWorld

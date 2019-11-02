@@ -5,9 +5,11 @@
             wrap
     >
         <v-flex>
-            <main-carousel class="mb-5"/>
-<!--            <products/>-->
+            <main-carousel class="mb-10"/>
+
             <sections-slider/>
+
+<!--                        <products/>-->
         </v-flex>
     </v-layout>
 
