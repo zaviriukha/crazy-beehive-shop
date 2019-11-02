@@ -29,7 +29,7 @@
 
                         <v-card-actions>
                             <v-btn color="orange">Add to card</v-btn>
-                            <v-btn flat icon color="pink">
+                            <v-btn text icon color="pink">
                                 <v-icon>favorite</v-icon>
                             </v-btn>
                             <v-select

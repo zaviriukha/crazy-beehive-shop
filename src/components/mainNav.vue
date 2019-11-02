@@ -5,24 +5,24 @@
         <v-spacer></v-spacer>
 
         <v-toolbar-items>
-            <v-btn flat>home</v-btn>
-            <v-btn flat>shop</v-btn>
-            <v-btn flat>about</v-btn>
+            <v-btn text>home</v-btn>
+            <v-btn text>shop</v-btn>
+            <v-btn text>about</v-btn>
         </v-toolbar-items>
 
         <v-img max-width='120' src='https://www.designfreelogoonline.com/wp-content/uploads/2017/01/000789-free-Organic-logo-design-free-food-logo-maker-01.png'></v-img>
 
         <v-toolbar-items>
-            <v-btn flat>blog</v-btn>
-            <v-btn flat>contanct</v-btn>
-            <v-btn flat>featured</v-btn>
+            <v-btn text>blog</v-btn>
+            <v-btn text>contanct</v-btn>
+            <v-btn text>featured</v-btn>
         </v-toolbar-items>
 
         <v-spacer></v-spacer>
 
         <v-menu offset-y>
             <template v-slot:activator="{ on }">
-                <v-btn flat
+                <v-btn text
                        v-on="on"
                 >
                     {{currency}} <v-icon>keyboard_arrow_down</v-icon>
